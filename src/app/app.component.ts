@@ -45,7 +45,7 @@ compute(){
   this.programLength = this.round(this.N1)+this.round(this.N2);
   this.programVocabulary = this.round(this.n1)+this.round(this.n2);
   this.programVolume = this.round(this.programLength * (Math.log(this.programVocabulary)/Math.log(2)));
-  this.programDifficulty = (this.round(this.n1)/2)*(this.round(this.N2)/this.round(this.n2));  //(n1 / 2) * (N2 / n2)  
+  this.programDifficulty = this.round((this.round(this.n1)/2)*(this.round(this.N2)/this.round(this.n2)));  //(n1 / 2) * (N2 / n2)  
   this.programLevel =this.round( 1/this.programDifficulty);
   this.programEffort = this.round(this.programDifficulty * this.programVolume);
   this.programTime = this.round(this.programEffort/this.programVolume);
