@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url('https://img.freepik.com/free-vector/green-matrix-digital-background-falling-numbers-digital-network-technology-futuristic-cyberspace-vector-illustration_302982-1909.jpg?w=740');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
