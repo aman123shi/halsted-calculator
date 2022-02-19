@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "chain-lexer": "^1.8.1",
     "express": "^4.17.2",
     "ngx-spinner": "^13.1.1",
     "path": "^0.12.7",
