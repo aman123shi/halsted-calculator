@@ -51,4 +51,7 @@ compute(){
   this.programTime = this.round(this.programEffort/this.programVolume);
   this.programBug = this.round(this.programEffort/18);
 }
+manualCompute(){
+  this.compute();
+}
 }

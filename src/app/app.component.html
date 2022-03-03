@@ -2,6 +2,9 @@
   <div class="row py-20">
     <div class="col-md-6 my-20">
       <div class="well">
+        <p class="text-white bg-dark">Please enter only valid "C language code without header included " this program
+          will not
+          check syntax of your program</p>
         <form accept-charset="UTF-8">
           <textarea class="form-control" [(ngModel)]="scode" id="text" name="text" placeholder="Paste your C code hear"
             rows="5"></textarea>
@@ -9,6 +12,49 @@
           <button class="btn btn-info rounded-50 mb-20" type="submit" id="btn" (click)="calculate()">Calculate</button>
         </form>
       </div>
+      <!--  ahadu code -->
+      <div class="col-md-6" style="margin-top: 20px;">
+        <div class="card bg-info">
+          <form class="pl-10">
+            <h6 class="text-white">Insert The Numbers to the Input Fields Provided Below</h6>
+            <div class="form-group">
+              <label>
+                Number Of Unique Operators (n1) :
+              </label>
+              <input type="number" id="n1" required [(ngModel)]="n1" [ngModelOptions]="{standalone: true}" />
+            </div>
+            <div class="form-group">
+              <label>
+                Number Of Unique Operands (n2) :
+              </label>
+              <input type="number" id="n2" required [(ngModel)]="n2" [ngModelOptions]="{standalone: true}" />
+            </div>
+            <div class="form-group">
+              <label>
+                Total; Number Of Operators (N1) :
+              </label>
+              <input type="number" id="N1" required [(ngModel)]="N1" [ngModelOptions]="{standalone: true}" />
+            </div>
+            <div class="form-group">
+              <label>
+                Total Number Of Operands (N2) :
+              </label>
+              <input type="number" id="N2" required [(ngModel)]="N2" [ngModelOptions]="{standalone: true}" /><br><br>
+            </div>
+            <button class="btn bg-warning btn-round" style="margin-top: 40px; float: left;" (click)="manualCompute()">
+              Calculate
+            </button>
+          </form>
+
+        </div>
+
+
+
+
+
+
+      </div>
+      <!--  ahadu code -->
     </div>
     <!-- End of Text Area -->
     <div class="col-md-6">
