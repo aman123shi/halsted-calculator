@@ -7,7 +7,7 @@ import { Observable, throwError } from 'rxjs';
 @Injectable({providedIn:'root'})
 export class DataSourceService {
   constructor(private http: HttpClient) { }
-  baseURL: string = "http://halsted-calculator.herokuapp.com/api";
+  baseURL: string = "https://halsted-calculator.herokuapp.com/api";
   
     calculate(ob:any): Observable<any> {
         const header = new HttpHeaders();
